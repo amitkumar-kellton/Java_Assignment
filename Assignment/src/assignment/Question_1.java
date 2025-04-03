@@ -13,8 +13,14 @@ public class Question_1 {
 		String stringToBeReversed = scanner.nextLine();
 		String reversedString = "";
 
-		for (int i = stringToBeReversed.length() - 1; i >= 0; i--) {
+//		for (int i = stringToBeReversed.length() - 1; i >= 0; i--) {
+//			reversedString += stringToBeReversed.charAt(i);
+//		}
+
+		int i = stringToBeReversed.length() - 1;
+		while (i >= 0) {
 			reversedString += stringToBeReversed.charAt(i);
+			i--;
 		}
 
 		System.out.println("\n" + reversedString);
