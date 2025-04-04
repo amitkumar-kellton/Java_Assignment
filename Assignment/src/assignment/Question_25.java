@@ -20,10 +20,11 @@ public class Question_25 {
 		firstList.add(5);
 		firstList.add(7);
 		firstList.add(9);
-		secondList.add(2);
-		secondList.add(4);
+		firstList.add(2);
+		firstList.add(4);
 		
 		Collections.sort(firstList);
+		System.out.println("First List: " + firstList);
 
 		secondList.add(6);
 		secondList.add(8);
@@ -35,8 +36,14 @@ public class Question_25 {
 		secondList.add(20);
 		
 		Collections.sort(secondList);
+		System.out.println("Second List: " + secondList);
 		
-//		Collections.merge(firstList, secondList);
+		mergerdList.addAll(firstList);
+		mergerdList.addAll(secondList);
+		Collections.sort(mergerdList);
+		System.out.println("Merged List: " + mergerdList);
+		
+		
 
 	}
 
