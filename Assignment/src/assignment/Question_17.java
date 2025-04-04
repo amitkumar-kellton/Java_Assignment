@@ -11,21 +11,22 @@ public class Question_17 {
 
 		Scanner scanner = new Scanner(System.in);
 		String stringToBeChecked = scanner.nextLine();
+		String substringToBeRemoved = scanner.nextLine();
 
-		String[] words = stringToBeChecked.split(" ");
-		String longestWord = "";
+		String subString;
 
 		int i = 0;
-		while (i < words.length) {
-			if (words[i].length() > count) {
-				count = words[i].length();
-				longestWord = words[i];
+		while (i < stringToBeChecked.length()) {
+			int j = 0;
+			while (j < stringToBeChecked.length()) {
+				if (substringToBeRemoved.charAt(i) == substringToBeRemoved.charAt(j)) {
+					
+				}
+				j++;
 			}
+
 			i++;
-
 		}
-
-		System.out.println("\nThe longest word in the string is: " + longestWord);
 
 		scanner.close();
 	}

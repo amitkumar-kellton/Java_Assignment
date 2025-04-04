@@ -4,28 +4,22 @@ import java.util.Scanner;
 
 public class Question_19 {
 	public static void main(String[] args) {
-		int count = 0;
-
 		System.out.println(
-				"\nQuestion 13: Find the Longest Word in a String: Write a program to find the longest word in a sentence..\n\n");
+				"\nQuestion 19: String Equality (Case-insensitive): Write a program to compare two strings without considering their case.\n\n");
 
 		Scanner scanner = new Scanner(System.in);
-		String stringToBeChecked = scanner.nextLine();
+		String firstStringToBeChecked = scanner.nextLine();
+		String secondStringToBeChecked = scanner.nextLine();
 
-		String[] words = stringToBeChecked.split(" ");
-		String longestWord = "";
-
-		int i = 0;
-		while (i < words.length) {
-			if (words[i].length() > count) {
-				count = words[i].length();
-				longestWord = words[i];
-			}
-			i++;
-
+		if (firstStringToBeChecked.length() != secondStringToBeChecked.length()) {
+			System.out.println("\nThe first string is shorter than the second string.");
 		}
+		if (firstStringToBeChecked.equalsIgnoreCase(secondStringToBeChecked)) {
+			System.out.println("\nThe two strings are same.");
 
-		System.out.println("\nThe longest word in the string is: " + longestWord);
+		} else {
+			System.out.println("\nThe two strings are not same.");
+		}
 
 		scanner.close();
 	}
