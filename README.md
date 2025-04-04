@@ -63,4 +63,4 @@ This repository contains solutions to various **String and Collection-related co
 
 1. **Clone the repository**  
    ```sh
-   git clone https://github.com/your-username/repo-name.git
+   git clone https://github.com/amitkumar-kellton/Java_Assignment.git
