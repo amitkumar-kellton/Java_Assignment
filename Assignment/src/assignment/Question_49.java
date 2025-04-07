@@ -1,26 +1,27 @@
 package assignment;
 
-import java.util.Scanner;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Question_49 {
 
 	public static void main(String[] args) {
 
-		System.out.println(
-				"\nQuestion 2- \n\n");
+		System.out.println("\nQuestion 49- Implement a Priority Queue – Create a priority queue.\n\n");
 
-		Scanner scanner = new Scanner(System.in);
+		Queue<Integer> queue = new PriorityQueue<>();
 
-		String stringToBeChecked = scanner.nextLine();
+		queue.offer(5);
+		queue.offer(4);
+		queue.offer(3);
+		queue.offer(2);
+		queue.offer(1);
 
-		
-		int i = 0;
-		while (i >= 0) {
-
+		while (!queue.isEmpty()) {
+			System.out.println("Queue Data: " + queue.poll());
 		}
-
-
-		scanner.close();
 	}
 
 }
+
+//Queue<Integer> queue = new LinkedList<>();

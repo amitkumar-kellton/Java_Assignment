@@ -1,26 +1,23 @@
 package assignment;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Question_45 {
 
 	public static void main(String[] args) {
 
-		System.out.println(
-				"\nQuestion 2- \n\n");
+		System.out.println("\nQuestion 45- Check if a List is Empty – Verify if a list is empty.\n\n");
 
-		Scanner scanner = new Scanner(System.in);
-
-		String stringToBeChecked = scanner.nextLine();
-
+		List<Integer> integersList = new ArrayList<>();
 		
-		int i = 0;
-		while (i >= 0) {
+//		integersList.add(2);
 
+		if (integersList.isEmpty()) {
+			System.out.println("List is empty...");
+		} else {
+			System.out.println("List is not empty...");
 		}
-
-
-		scanner.close();
 	}
 
 }

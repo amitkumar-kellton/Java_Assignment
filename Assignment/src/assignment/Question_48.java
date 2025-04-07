@@ -1,26 +1,40 @@
 package assignment;
 
-import java.util.Scanner;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Question_48 {
 
 	public static void main(String[] args) {
 
 		System.out.println(
-				"\nQuestion 2- \n\n");
+				"\nQuestion 48- Find the Difference Between Two Sets – Identify elements in one set but not in another.\n\n");
 
-		Scanner scanner = new Scanner(System.in);
+		Set<Integer> set1 = new HashSet<>();
+		Set<Integer> set2 = new HashSet<>();
+		Set<Integer> result = new HashSet<>();
 
-		String stringToBeChecked = scanner.nextLine();
+		set1.add(5);
+		set1.add(4);
+		set1.add(3);
+		set1.add(2);
+		set1.add(1);
 
-		
-		int i = 0;
-		while (i >= 0) {
+		System.out.println("\nSet 1: " + set1);
 
-		}
+		set2.add(4);
+		set2.add(3);
+		set2.add(2);
+		set2.add(1);
 
+		System.out.println("\nSet 2: " + set2);
 
-		scanner.close();
+		result.addAll(set1);
+		result.addAll(set2);
+		result.removeAll(set2);
+
+		System.out.println("\nDifference Between Two Sets: " + result);
+
 	}
 
 }

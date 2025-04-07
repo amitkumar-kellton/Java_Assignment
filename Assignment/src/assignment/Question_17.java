@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Question_17 {
 	public static void main(String[] args) {
-		int count = 0;
-
 		System.out.println(
 				"\nQuestion 17: Remove Substring from a String: Write a program to remove a given substring from a string.\n\n");
 
@@ -13,7 +11,6 @@ public class Question_17 {
 		String stringToBeChecked = scanner.nextLine();
 		String substringToBeRemoved = scanner.nextLine();
 
-		String subString;
 
 		int i = 0;
 		while (i < stringToBeChecked.length()) {
