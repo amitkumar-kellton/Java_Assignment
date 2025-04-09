@@ -1,26 +1,40 @@
 package assignment;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Question_37 {
 
 	public static void main(String[] args) {
 
 		System.out.println(
-				"\nQuestion 2- \n\n");
+				"\nQuestion 37- Find Unique Elements in a List – Identify elements that appear only once.\n\n");
 
-		Scanner scanner = new Scanner(System.in);
+		List<Integer> integersList = new ArrayList<>();
+		List<Integer> uniqueIntegersList = new ArrayList<>();
 
-		String stringToBeChecked = scanner.nextLine();
+		integersList.add(2);
+		integersList.add(2);
+		integersList.add(4);
+		integersList.add(4);
+		integersList.add(6);
+		integersList.add(8);
+		integersList.add(10);
 
-		
+		System.out.println("\nIntegers List: " + integersList);
+
 		int i = 0;
-		while (i >= 0) {
-
+		while (i < integersList.size()) {
+			int j = i + 1;
+			while (j < integersList.size()) {
+				if (integersList.get(i) == integersList.get(j)) {
+				}
+				j++;
+			}
+			i++;
 		}
-
-
-		scanner.close();
+		System.out.println("\nIntegers List: " + integersList);
+		System.out.println("\nUnique IntegersList List: " + uniqueIntegersList);
 	}
 
 }

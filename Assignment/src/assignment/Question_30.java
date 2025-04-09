@@ -1,26 +1,29 @@
 package assignment;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Question_30 {
 
 	public static void main(String[] args) {
 
 		System.out.println(
-				"\nQuestion 2- \n\n");
+				"\nQuestion 30- Find the Second Largest Element in a List – Identify the second largest number.\n\n");
 
-		Scanner scanner = new Scanner(System.in);
+		List<Integer> integersList = new ArrayList<>();
 
-		String stringToBeChecked = scanner.nextLine();
+		integersList.add(2);
+		integersList.add(4);
+		integersList.add(55);
+		integersList.add(4);
+		integersList.add(10);
+		integersList.add(2);
+		integersList.add(14);
 
-		
-		int i = 0;
-		while (i >= 0) {
+		Collections.sort(integersList);
 
-		}
-
-
-		scanner.close();
+		System.out.println("Second largest integers List: " + integersList.get(integersList.size() - 2));
 	}
 
 }

@@ -16,16 +16,16 @@ public class Question_4 {
 
 		int i = 0;
 		while (i < stringToBeChecked.length()) {
-			boolean isDuplicate = false;
+			boolean duplicate = false;
 			int j = 0;
 			while (j < i) {
 				if (stringToBeChecked.charAt(i) == stringToBeChecked.charAt(j)) {
-					isDuplicate = true;
+					duplicate = true;
 					break;
 				}
 				j++;
 			}
-			if (!isDuplicate) {
+			if (!duplicate) {
 				result += stringToBeChecked.charAt(i);
 			}
 			i++;
